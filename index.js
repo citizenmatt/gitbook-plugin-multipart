@@ -2,7 +2,7 @@ var cheerio = require('cheerio');
 
 module.exports = {
     book: {
-        assets: ".",
+        assets: "assets",
         css: [ "multipart.css" ]
     },
     hooks: {
