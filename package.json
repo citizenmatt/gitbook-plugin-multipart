@@ -1,0 +1,29 @@
+{
+  "name": "gitbook-plugin-multipart",
+  "version": "0.1.0",
+  "description": "GitBook plugin - split a book into parts rather than a huge list of chapters",
+  "main": "index.js",
+  "engines": {
+    "gitbook": "*"
+  },
+  "dependencies": {
+    "cheerio": "0.17.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/citizenmatt/gitbook-plugin-multipart.git"
+  },
+  "keywords": [
+    "gitbook",
+    "plugin"
+  ],
+  "author": "Matt Ellis <m.t.ellis@gmail.com>",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/citizenmatt/gitbook-plugin-multipart/issues"
+  },
+  "homepage": "https://github.com/citizenmatt/gitbook-plugin-multipart"
+}
