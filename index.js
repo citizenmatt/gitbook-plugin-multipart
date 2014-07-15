@@ -6,10 +6,21 @@ module.exports = {
         css: [ "multipart.css" ]
     },
     hooks: {
-        // I'd like to see "summary:before" to allow munging the content of the
-        // SUMMARY.md before it's read. Or "summary:after" to allow messing with
-        // the generated summary object model. Then I could support SUMMARY.md
-        // with h2 and multiple lists
+        // Gets plain text content
+        "summary:before": function(summary) {
+
+            // If the file contains an h2, we need to reformat it
+            if (summary.content.match(/^## /m)) {
+
+                // Indent all existing list items, then replace the h2 with a top level list item
+                // and then remove any blank lines
+                summary.content = summary.content.replace(/^(\s*\* .*)$/gm, "    $1")
+                    .replace(/^## (.*)$/gm, "* $1")
+                    .replace(/(\*.*)\n\n/gm, "$1\n");
+            }
+
+            return summary;
+        },
 
         // Requires an unhealthy knowledge of the generated template...
         "page:after": function(page) {

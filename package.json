@@ -1,10 +1,10 @@
 {
   "name": "gitbook-plugin-multipart",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "GitBook plugin - split a book into parts rather than a huge list of chapters",
   "main": "index.js",
   "engines": {
-    "gitbook": "*"
+    "gitbook": ">=0.6.0"
   },
   "dependencies": {
     "cheerio": "0.17.0"
