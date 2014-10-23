@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-multipart",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "GitBook plugin - split a book into parts rather than a huge list of chapters",
   "main": "index.js",
   "engines": {
