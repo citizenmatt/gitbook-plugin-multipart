@@ -96,3 +96,22 @@ you can now write:
 * Of course
 ```
 
+The plugin will render this as separate parts, with the header displayed in bold italics, and a divider placed above the new part heading.
+
+Additionally, the plugin supports intro pages at the start of the summary. This are pages that don't have a heading, and appear directly below the Introduction node, with no visible page numbers and no divider.
+
+```markdown
+# Book Title
+
+* Getting Started
+* About this guide
+
+## Part I - Introduction
+* Really interesting
+    * Did you know?
+    * Oh yes
+        * I know!
+        * Quite
+    * Gosh
+```
+
