@@ -32,6 +32,9 @@ module.exports = {
                 var li = $(elem);
                 li.removeClass('chapter');
                 li.addClass('part');
+
+                if (i > 0)
+                    li.before('<li class="part divider" />');
             });
 
             // Remove the chapter number from the part header
